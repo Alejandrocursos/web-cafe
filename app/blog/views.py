@@ -3,8 +3,10 @@ from .models import Post, Category
 # Create your views here.
 
 def blog(request):
+    model = Post
     posts = Post.objects.all()
-    return render(request,"blog/blog.html",{'posts':posts})
+    args= {'posts':posts}
+    return render(request,"blog/blog.html",args)
 
 
 #Vieja forma
