@@ -42,7 +42,7 @@ urlpatterns = [
 
     # Paths del Pages
 
-    path('contact/', include('contact.urls')),
+    path('Contacto/', include('contact.urls')),
     
 ]
 
